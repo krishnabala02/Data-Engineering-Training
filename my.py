@@ -1,0 +1,37 @@
+import pandas as pd
+import numpy as np
+import datetime
+
+a =np.array([1, 2, 3])
+#print(a)
+#print(a.shape)
+#print(a.dtype)
+#for i in a:
+    #print(i)
+#a[0] = 5
+#print(a)
+b= np.array([[1,2,3],[4,5,6]])
+print(b)
+print(b.shape)
+print(np.zeros((2,2)))
+print(np.ones((1,2)))
+c =np.full((2,2),7)
+print(c)
+d =np.identity(2)
+print(d)
+e =np.random.randint(1, 5, (2,2))
+print(e)
+f=np.array([[ 1 , 2 , 3 , 4],[ 5 , 6 , 7 , 8],[ 9, 10 ,11, 12]])
+print(f)
+print(f[0:2,0:2])
+g =np.array([[ 1 , 2 , 3 , 4],[ 5 , 6 , 7 , 8],[ 9 ,10 ,11,12]])
+print(g)
+row_r1 =np.array(g[1:2,:])
+#print(row_r1.shape)
+#np.reshape(row_r1, 1)
+#print(row_r1.shape)
+h =np.array([[ 1 , 2 , 3 , 4],[ 5 , 6 , 7 , 8],[ 9 ,10 ,11,12]])
+arr1= np.array(h[1,:])
+np.reshape(arr1,2)
+print(arr1.shape)
+print(h.ndim)
